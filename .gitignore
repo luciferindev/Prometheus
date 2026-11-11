@@ -1,0 +1,8 @@
+.venv/
+.devhome/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+bridge/node_modules/
+bridge/dist/
+build/

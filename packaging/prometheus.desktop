@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=PROMETHEUS
+GenericName=Minecraft AI Agent Control
+Comment=Configure, launch and monitor an autonomous Minecraft agent powered by Claude
+Exec=prometheus
+Icon=prometheus
+Terminal=false
+Categories=Game;Qt;
+Keywords=Minecraft;Claude;AI;Agent;
+StartupWMClass=prometheus
+StartupNotify=true

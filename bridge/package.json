@@ -1,0 +1,28 @@
+{
+  "name": "prometheus-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mineflayer bridge for PROMETHEUS: JSON-RPC 2.0 over stdio",
+  "type": "module",
+  "main": "dist/main.js",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "typecheck": "tsc -p . --noEmit",
+    "test": "node --test --test-force-exit test/*.test.ts"
+  },
+  "dependencies": {
+    "minecraft-data": "^3.119.0",
+    "minecraft-protocol": "^1.68.0",
+    "mineflayer": "^4.39.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "prismarine-auth": "^3.1.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

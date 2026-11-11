@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prometheus-desktop"
+version = "0.1.0"
+description = "Native Qt6 control centre for an autonomous Minecraft agent powered by Claude"
+requires-python = ">=3.11"
+dependencies = ["PySide6>=6.6", "anthropic>=2.0", "keyring>=24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-qt>=4.4"]
+
+[project.gui-scripts]
+prometheus = "prometheus.app:main"
+
+[tool.setuptools.packages.find]
+include = ["prometheus*"]
+
+[tool.setuptools.package-data]
+prometheus = ["resources/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+qt_api = "pyside6"
